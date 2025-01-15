@@ -12,6 +12,16 @@ public class Alumno extends Persona {
 		this.cursos = cursos;
 		this.fechaIngreso = fechaIngreso;
 	}
+	
+	public LocalDate getFechaIngreso() {
+		return fechaIngreso;
+	}
+
+
+
+	public void setFechaIngreso(LocalDate fechaIngreso) {
+		this.fechaIngreso = fechaIngreso;
+	}
 
 	@Override
 	public String toString() {
@@ -25,5 +35,6 @@ public class Alumno extends Persona {
 	public void setCursos(ArrayList<String> cursos) {
 		this.cursos = cursos;
 	}
+
 
 }
